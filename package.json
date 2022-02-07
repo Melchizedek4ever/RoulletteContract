@@ -1,0 +1,23 @@
+{
+  "name": "roullettecontract",
+  "version": "1.0.0",
+  "description": "Russian roulette in AS",
+  "main": "index.js",
+  "scripts": {
+    "test": "asp",
+    "build": "asb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Melchizedek4ever/RoulletteContract.git"
+  },
+  "author": "Ezra Kewa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Melchizedek4ever/RoulletteContract/issues"
+  },
+  "homepage": "https://github.com/Melchizedek4ever/RoulletteContract#readme",
+  "devDependencies": {
+    "near-sdk-as": "^3.2.3"
+  }
+}
