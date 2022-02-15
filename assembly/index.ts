@@ -5,7 +5,7 @@ enum GameState {
     Joined,
     Ended
 }
-@nearBindgen
+
 export class Roulette {
     gameId: u32;
 	player: string;
