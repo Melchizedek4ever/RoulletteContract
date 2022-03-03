@@ -10,7 +10,7 @@ echo \$OWNER is $OWNER
 
 
 #Step 1: Create a Roulette Game by uncommenting ONLY the following line and then running the script
-near call $CONTRACT createGame --amount 10 --account_id $OWNER
+#near call $CONTRACT createGame --amount 10 --account_id $OWNER
 
 #Step 2: Join the Game by uncommenting ONLY the near call line below and then running the script. 
 #This needs the following arguments:
@@ -18,7 +18,7 @@ near call $CONTRACT createGame --amount 10 --account_id $OWNER
 #Pass in your guess as either true or false
 #Pass in an amount of money 
 #finally pass in your testnet account
-near call $CONTRACT joinGame '{"_gameId":3856165906, "_guess":false}' --amount 10 --account_id melchizedek.testnet
+#near call $CONTRACT joinGame '{"_gameId":889151183, "_guess":true}' --amount 10 --account_id melchizedek.testnet
 
 #Step 3: call endGame by uncommenting ONLY the following line and then running the script
-near call $CONTRACT endGame
+near call $CONTRACT endGame '{"_gameId":889151183}' --account_id $OWNER

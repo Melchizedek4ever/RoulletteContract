@@ -1,3 +1,4 @@
+
 import { context, logging, storage, PersistentDeque, u128, RNG, PersistentMap, ContractPromiseBatch } from "near-sdk-as";
 
 enum GameState {
@@ -5,7 +6,7 @@ enum GameState {
     Joined,
     Ended
 }
-
+    @nearBindgen
 export class Roulette {
     gameId: u32;
 	player: string;

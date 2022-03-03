@@ -5,20 +5,20 @@ import{
     joinGame,
 } from "../";
 
-import { VMContext, u128,} from "near-sdk-as";
+import { VMContext, u128, PersistentMap,} from "near-sdk-as";
 
-const contract = "melchizedek.testnet";
+const contract =("melchizedek.testnet");
 
 describe("Create a game", () => {
 
-    it("should create a new game", () => {
+/*    it("should create a new game", () => {
         VMContext.setCurrent_account_id(contract);
 //        VMContext.setSigner_account_id(contract);
         VMContext.setAttached_deposit(u128.from('50000000000000000000000'));
         expect(createGame).toBeTruthy;
             })
     });
-
+*/
     it("should join game", () => {
         VMContext.setCurrent_account_id(contract);
         VMContext.setAttached_deposit(u128.from('50000000000000000000000'));
@@ -29,4 +29,4 @@ describe("Create a game", () => {
         VMContext.setAttached_deposit(u128.from('50000000000000000000000'));
         expect(endGame).toBeTruthy();
         })
-    })
+    })})
