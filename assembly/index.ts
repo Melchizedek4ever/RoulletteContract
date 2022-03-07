@@ -63,14 +63,14 @@ export function endGame(_gameId: u32): string {
     const winning_num = rng.next();
     
     if(winning_num%2 == 1){
-        logging.log("your number is odd ")
+        logging.log("winning number is odd ")
         if(game.guess == false){
             game.winner = game.player;
         }
     }
     else{
         if(game.guess == true){
-            logging.log("your number is even")
+            logging.log("winning number is even")
             game.winner = game.player;
         }
     }
