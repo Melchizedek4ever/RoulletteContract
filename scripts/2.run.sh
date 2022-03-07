@@ -18,7 +18,7 @@ echo \$OWNER is $OWNER
 #Pass in your guess as either true or false
 #Pass in an amount of money 
 #finally pass in your testnet account
-#near call $CONTRACT joinGame '{"_gameId":889151183, "_guess":true}' --amount 10 --account_id melchizedek.testnet
+#near call $CONTRACT joinGame '{"_gameId":338757941, "_guess":true}' --amount 10 --account_id melchizedek.testnet
 
 #Step 3: call endGame by uncommenting ONLY the following line and then running the script
-near call $CONTRACT endGame '{"_gameId":889151183}' --account_id $OWNER
+#near call $CONTRACT endGame '{"_gameId":338757941}' --account_id $OWNER
